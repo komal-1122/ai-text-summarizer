@@ -1,0 +1,8 @@
+Python is a versatile programming language that is commonly used in AI, web development, and automation due to its capabilities and wide application.Python is a versatile programming language that is commonly used in various domains such as artificial intelligence, web development, and automation.
+
+This summary discusses creating Python functions. Functions are blocks of reusable code that perform a specific task when called. They can take input values, called arguments, and return an output value. To create a function in Python, use the "def" keyword followed by the function name and any arguments it takes. The function block contains the code that executes when the function is called. To return a value from a function, use the "return" keyword. Functions are a powerful tool in programming to organize code and make it more modular and manageable.
+
+Python is a high-level programming language that focuses on simplicity and readability, while C++ is a lower-level language that offers more control and efficiency. Python is dynamically typed and uses a simpler syntax, making it easier to learn and use, whereas C++ is statically typed and offers more flexibility and control over memory management. Overall, Python is more beginner-friendly and suitable for rapid development, while C++ is better suited for complex and performance-critical applications.
+
+Exit refers to the action of leaving a particular place or situation.
+
