@@ -1,6 +1,4 @@
-# changes from git 
-# again making chagnes in the githun for testing 
-# PYTHON
+                                             # PYTHON
 # def greet_user(): 
 #        name = input("Enter You Name: ")
 #        print("Hello", name)
@@ -96,6 +94,7 @@ load_dotenv(dotenv_path=".env")
 
 api_key = os.getenv("API_KEY")
 
+
 def summarize_text():
     url = "https://openrouter.ai/api/v1/chat/completions"
 
@@ -105,24 +104,26 @@ def summarize_text():
     }
 
     while True:
+        
+
         user_input = input("\nEnter text to summarize (or type 'exit'): ")
 
         if user_input.lower() == "exit":
             print("Goodbye 👋")
             break
+        
 
-        data = {
+        aimodel = {
             "model": "openai/gpt-3.5-turbo",
             "messages": [
-                {"role": "user", "content": f"Summarize this: {user_input}"}
+                {"role": "user", "content": f"Summarize this clearly in 2-3 complete sentences: {user_input}"}
             ]
         }
 
         try:
-            response = requests.post(url, headers=headers, json=data)
+            response = requests.post(url, headers=headers, json=aimodel)
             result = response.json()
             # print(api_key)
-            print("Testing Git Push updating and deleting")
 
             if "choices" in result:
                 summary = result["choices"][0]["message"]["content"]
