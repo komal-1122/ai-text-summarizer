@@ -113,7 +113,7 @@ def summarize_text():
             break
         
 
-        aimodel = {
+       data = {
             "model": "openai/gpt-3.5-turbo",
             "messages": [
                 {"role": "user", "content": f"Summarize this clearly in 2-3 complete sentences: {user_input}"}
@@ -121,7 +121,7 @@ def summarize_text():
         }
 
         try:
-            response = requests.post(url, headers=headers, json=aimodel)
+            response = requests.post(url, headers=headers, json=data)
             result = response.json()
             # print(api_key)
 
