@@ -120,7 +120,7 @@ def summarize_text():
             response = requests.post(url, headers=headers, json=data)
             result = response.json()
             # print(api_key)
-            print("Testing Git Push")
+            print("Testing Git Push updating and deleting")
 
             if "choices" in result:
                 summary = result["choices"][0]["message"]["content"]
